@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eslachance/level-promise.git"
+    "url": "git+https://github.com/eslachance/native-level-promise.git"
   },
   "bugs": {
-    "url": "https://github.com/eslachance/level-promise/issues"
+    "url": "https://github.com/eslachance/native-level-promise/issues"
   },
   "keywords": [
     "level",
