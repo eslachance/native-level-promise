@@ -1,6 +1,6 @@
 {
   "name": "native-level-promise",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A native node 8 promise wrapper around the `level` database.",
   "main": "index.js",
   "dependencies": {
@@ -17,7 +17,14 @@
   "bugs": {
     "url": "https://github.com/eslachance/level-promise/issues"
   },
-  "keywords": ["level", "leveldb", "leveldown", "levelup", "promise", "promisify"],
+  "keywords": [
+    "level",
+    "leveldb",
+    "leveldown",
+    "levelup",
+    "promise",
+    "promisify"
+  ],
   "author": "Evelyne Lachance <me@evie.codes>",
   "license": "MIT"
 }
