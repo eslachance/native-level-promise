@@ -1,5 +1,5 @@
 {
-  "name": "level-promise",
+  "name": "native-level-promise",
   "version": "0.0.1",
   "description": "A native node 8 promise wrapper around the `level` database.",
   "main": "index.js",

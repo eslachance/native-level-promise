@@ -1,4 +1,4 @@
-const level = require('level')
+const level = require('level');
 const { promisify } = require('util');
 
 class LevelPromise {
@@ -8,12 +8,16 @@ class LevelPromise {
     const prototype = Object.getPrototypeOf(this.level);
     
     Object.keys(prototype).forEach(key => {
-      this[key] = promisify(prototype[key]).bind(this.level);
+      if(this._hasParam(prototype[key], "callback")) {
+
+        this[key] = promisify(prototype[key]).bind(this.level);
+      } else {
+        this[key] = (...args) => this.level[key](...args);
+      }
     });
 
     this._destroy = promisify(level.destroy);
     this._repair = promisify(level.repair);
-    
   }
   
   async destroy () {
@@ -22,6 +26,15 @@ class LevelPromise {
   
   async repair () {
     await this._repair(this.location);
+  }
+
+  
+  _hasParam (fn, name) {
+    const params = fn.toString()
+      .replace(/((\/\/.*$)|(\/\*[\s\S]*?\*\/)|(\s))/mg,'')
+      .match(/^function\s*[^\(]*\(\s*([^\)]*)\)/m)[1]
+      .split(/,/);
+    return params.includes(name);
   }
 }
 
