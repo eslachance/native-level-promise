@@ -10,6 +10,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eslachance/level-promise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eslachance/level-promise/issues"
+  },
   "keywords": ["level", "leveldb", "leveldown", "levelup", "promise", "promisify"],
   "author": "Evelyne Lachance <me@evie.codes>",
   "license": "MIT"
