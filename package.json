@@ -4,7 +4,7 @@
   "description": "A native node 8 promise wrapper around the `level` database.",
   "main": "index.js",
   "dependencies": {
-    "level": "^1.7.0"
+    "level-party": "^3.0.4"
   },
   "devDependencies": {},
   "scripts": {
