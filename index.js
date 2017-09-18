@@ -15,19 +15,7 @@ class LevelPromise {
         this[key] = (...args) => this.level[key](...args);
       }
     });
-
-    this._destroy = promisify(level.destroy);
-    this._repair = promisify(level.repair);
   }
-  
-  async destroy () {
-    await this._destroy(this.location);
-  }
-  
-  async repair () {
-    await this._repair(this.location);
-  }
-
   
   _hasParam (fn, name) {
     const params = fn.toString()
