@@ -1,6 +1,6 @@
 {
   "name": "native-level-promise",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A native node 8 promise wrapper around the `level` database.",
   "main": "index.js",
   "types": "typings/index.d.ts",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/eslachance/native-level-promise/issues"
   },
-  "homepage": "https://github.com/eslachance/native-level-promise#readme", 
+  "homepage": "https://github.com/eslachance/native-level-promise#readme",
   "keywords": [
     "level",
     "leveldb",
