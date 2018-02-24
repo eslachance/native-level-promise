@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "description": "A native node 8 promise wrapper around the `level` database.",
   "main": "index.js",
+  "types": "typings/index.d.ts",
   "dependencies": {
     "level-party": "^3.0.4"
   },
